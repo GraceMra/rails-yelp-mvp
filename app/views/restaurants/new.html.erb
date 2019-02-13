@@ -1,1 +1,16 @@
-<h1>Create a restaurant</h1>
+<div class="container">
+
+  <h1>Create a restaurant</h1>
+  <hr>
+  <%= simple_form_for(@restaurant) do |f| %>
+    <%=  f.input :name %>
+    <%=  f.input :address %>
+    <%=  f.input :category %>
+    <%=  f.input :phone_number %>
+    <%=  f.submit %>
+  <% end %>
+  <hr>
+
+  <%= link_to "< Back to list", restaurants_path %>
+
+</div>
